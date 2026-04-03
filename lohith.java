@@ -10,7 +10,8 @@ public class lohith {
       //s.SumAverageRunningInt();
       //s.HarmonicSum();
       //s.Fibonacci(20);
-      s.reversed();
+      //s.reversed();
+      s.CircleComputation();
 
 
 
@@ -170,6 +171,20 @@ void reversed() {
     }
 
     System.out.println(rev);
+}
+
+void CircleComputation() {
+    System.out.println("Enter the radius of the circle : ");
+    float radius = sc.nextFloat();
+    
+    double diameter = 2.0*radius;
+    double area = Math.PI*radius*radius;
+    double circumference = 2.0*Math.PI*radius;
+
+    System.out.printf("Diameter of the circle is %.2f \n", diameter);
+    System.out.printf("area of the circle is %.2f \n", area);
+    System.out.printf("circumference of the circle is %.2f \n", circumference);
+
 }
 
 
