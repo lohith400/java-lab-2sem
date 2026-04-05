@@ -11,7 +11,9 @@ public class lohith {
       //s.HarmonicSum();
       //s.Fibonacci(20);
       //s.reversed();
-      s.CircleComputation();
+      //s.CircleComputation();
+	  student s1 = new student();
+	  s1.total();
 
 
 
@@ -66,21 +68,6 @@ void pick_shapes() {
 
 
 
-/*class student() {
-	Scanner sc = new Scanner(System.in);
-	System,out.println("Enter for how many students you want to calculate their total marks: ");
-	int total_students = nextInt();
-	int i = 1;
-	while (i <= total_students ){
-		System.out.println("Enter the name of the student  "+ i + " :");
-		String name = sc.nextLine();
-		System.out.println(name);
-		i++;
-
-		}
-
-	}
-*/
 
 
 /*Write a program called SumAverageRunningInt to produce the sum of 1, 2, 3, ..., to 100.
@@ -191,5 +178,25 @@ void CircleComputation() {
 
 
 }
+
+class student {
+	Scanner sc = new Scanner(System.in);
+	
+	void total() {
+		System.out.println("Enter for how many students you want to calculate their total marks: ");
+		int total_students = sc.nextInt();
+		int i = 1;
+		while (i <= total_students ){
+			System.out.println("Enter the name of the student  "+ i + " :");
+			String name = sc.next();
+			System.out.println(name);
+			i++;
+
+			}
+		}
+
+}
+
+
 
 
