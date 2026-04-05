@@ -187,9 +187,20 @@ class student {
 		int total_students = sc.nextInt();
 		int i = 1;
 		while (i <= total_students ){
+			int total_marks = 0;
+			float per = 0;
 			System.out.println("Enter the name of the student  "+ i + " :");
 			String name = sc.next();
-			System.out.println(name);
+			System.out.println("Total number of subjects : ");
+			int subs = sc.nextInt();
+			
+			for (int j =1; j<=subs; j++) {
+				System.out.println("Enter the score of subject "+ j+ " out of 100 "+" : " );
+				int marks = sc.nextInt();
+				total_marks = total_marks + marks;
+
+			}
+			System.out.println(name+" : Total marks " + total_marks +" out of " + subs*100 +"\n");
 			i++;
 
 			}
